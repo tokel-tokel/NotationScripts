@@ -44,10 +44,12 @@ public class Script1 implements IScript
         {
             System.out.print(0);
         }
-
-        for(int i : whole)
+        else
         {
-            System.out.print(i);
+            for (int i : whole)
+            {
+                System.out.print(i);
+            }
         }
 
         if(!fract.isEmpty())
