@@ -11,7 +11,8 @@ public class Script1 implements IScript
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter the number:");
-        double num = in.nextDouble();
+        String num = in.next();
+        num = num.replace(',', '.');
         System.out.println("Enter the radix:");
         int radix = in.nextInt();
         System.out.println("Enter the decimal places:");
